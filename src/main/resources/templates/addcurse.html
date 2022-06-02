@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<tr>
+    <th><big>name</big></th>
+    <th><big>division</big></th>
+</tr>
+<tr>
+
+    <form th:action="@{/curseController/add}" th:object="${curse}" method="post">
+
+        <td><input type="text" th:field="*{name}" ></td>
+        <td><input type="text" th:field="*{division}"></td>
+        <td><input type="submit" name="btnInsert" class="btn btn-primary"  value=Añadir>
+        </td>
+    </form>
+</tr>
+</body>
+</html>
