@@ -7,6 +7,8 @@ import javax.persistence.*;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "Pupil")
 public class Pupil {
@@ -31,6 +33,7 @@ public class Pupil {
     @ManyToOne
     @JoinColumn(name = "curse_id")
     private Curse curse;
+
 
 
     //TODO utiliza lombok para la creación automática de getters, setters y constructores
